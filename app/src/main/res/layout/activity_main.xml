@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/HelloOpenCvView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:textColor="#000"
+        android:background="#6FFF"
+        android:id="@+id/displayResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/HelloOpenCvView"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/displayResult"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
+</RelativeLayout>
